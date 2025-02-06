@@ -1,7 +1,7 @@
-# CovidVaccine
+# Checkwords
 
 ## Overview
-The `CovidVaccine` program reads a text file, analyzes its content, and provides various statistics, including:
+The `Checkwords` program reads a text file, analyzes its content, and provides various statistics, including:
 - Total number of characters
 - Number of palindrome words
 - Total number of tokens (words)
@@ -21,19 +21,19 @@ The `CovidVaccine` program reads a text file, analyzes its content, and provides
 
 ## How to Use
 ### 1. Run the Program
-You can run the program directly using the precompiled `CovidVaccine.class` file.
+You can run the program directly using the precompiled `Checkwords.class` file.
 
 #### Using Command Prompt
 ```sh
-java CovidVaccine
+java Checkwords
 ```
 
 #### Using VS Code
-1. Open `CovidVaccine.java` in Visual Studio Code.
+1. Open `Checkwords.java` in Visual Studio Code.
 2. Use the built-in terminal to navigate to the correct directory.
 3. Run the command:
    ```sh
-   java CovidVaccine
+   java Checkwords
    ```
 
 ### 2. Enter the File Path
