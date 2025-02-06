@@ -1,15 +1,15 @@
-
 # CovidVaccine
 
 ## Overview
-The `CovidVaccine` program reads a text file, analyzes its content, and provides various statistics such as:
+The `CovidVaccine` program reads a text file, analyzes its content, and provides various statistics, including:
 - Total number of characters
 - Number of palindrome words
-- Number of tokens (words)
+- Total number of tokens (words)
 - Number of emoticons (`:)` and `:D`)
-- Number of lines
-- Longest token (word)
-- Average token size
+- Total number of lines
+- The longest token (word)
+- The average token size
+- Execution time measurement
 
 ## Features
 - Reads a text file specified by the user.
@@ -17,22 +17,30 @@ The `CovidVaccine` program reads a text file, analyzes its content, and provides
 - Identifies palindromes and emoticons.
 - Finds the longest word in the text.
 - Calculates the average word length.
-- Measures execution time.
+- Measures execution time for performance evaluation.
 
 ## How to Use
-1. **Compile and Run the Program**
+### 1. Run the Program
+You can run the program directly using the precompiled `CovidVaccine.class` file.
+
+#### Using Command Prompt
+```sh
+java CovidVaccine
+```
+
+#### Using VS Code
+1. Open `CovidVaccine.java` in Visual Studio Code.
+2. Use the built-in terminal to navigate to the correct directory.
+3. Run the command:
    ```sh
-   javac CovidVaccine.java
-   java ADT.work.CovidVaccine
+   java CovidVaccine
    ```
-2. **Enter the File Path**
-   - When prompted, enter the name of the text file located in `D:\InputFile\`.
-   - Example: If the file is `input1.txt`, enter `input1.txt`.
 
-3. **Output**
-   - The program will display the analyzed results along with execution time.
+### 2. Enter the File Path
+- When prompted, enter the name of the text file located in `D:\InputFile\`.
+- Example: If the file is `input1.txt`, enter `input1.txt`.
 
-## Example Output
+### 3. Output Example
 ```
 Please enter the file path: input1.txt
 Program start:
@@ -57,7 +65,9 @@ Program terminated properly!
 ## Notes
 - The program assumes that the input file exists in the specified directory (`D:\InputFile\`).
 - It uses `StringTokenizer` for tokenizing words.
-- It measures execution time to evaluate performance.
+- The execution time is measured using `System.nanoTime()`.
+- If the file is not found or cannot be read, the program will display an error message.
 
-## Author 
-Developed by Wasinpat yanin 672115043
+## Author
+Developed by Wasinpat Yanin 672115043
+
